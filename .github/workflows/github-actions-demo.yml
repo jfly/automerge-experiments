@@ -4,8 +4,5 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: echo "JFLY SAYS: $(git rev-parse HEAD)"
+      - run: echo "JFLY SAYS $(git rev-parse HEAD)"
